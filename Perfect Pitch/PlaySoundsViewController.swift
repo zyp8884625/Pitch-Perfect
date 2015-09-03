@@ -22,12 +22,6 @@ class PlaySoundsViewController: UIViewController {
         audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
 
         // Do any additional setup after loading the view.
-//        if  var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-//            var filePathUrl = NSURL.fileURLWithPath(filePath)
-//                    }else{
-//            println("Missing file")
-//            
-//        }
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
 
@@ -38,12 +32,18 @@ class PlaySoundsViewController: UIViewController {
            }
     
     @IBAction func playSlowAudio(sender: AnyObject) {
+        audioEngine.stop()
+        audioEngine.reset()
+        
         audioPlayer.stop()
         audioPlayer.rate = 0.5
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     @IBAction func playFastAudio(sender: UIButton) {
+        audioEngine.stop()
+        audioEngine.reset()
+        
         audioPlayer.stop()
         audioPlayer.rate = 2
         audioPlayer.currentTime = 0.0
@@ -61,11 +61,15 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func stopAudio(sender: UIButton) {
         audioPlayer.stop()
+        
+        audioEngine.stop()
+        audioEngine.reset()
     }
     
     func playAudioWithVariablePitch(pitch: Float){
         audioPlayer.stop()
         audioEngine.stop()
+        
         audioEngine.reset()
         
         var audioPlayerNode = AVAudioPlayerNode()

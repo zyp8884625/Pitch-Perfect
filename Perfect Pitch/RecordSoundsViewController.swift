@@ -36,12 +36,10 @@ class RecordSoundsViewController: UIViewController,AVAudioRecorderDelegate {
     @IBAction func recordAudio(sender: UIButton) {
         //Inside func recordAudio(sender: UIButton)
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
-        
         let currentDateTime = NSDate()
         let formatter = NSDateFormatter()
         formatter.dateFormat = "ddMMyyyy-HHmmss"
         let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
-        //let recordingName = "my_audio.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURLWithPathComponents(pathArray)
         println(filePath)
@@ -54,7 +52,7 @@ class RecordSoundsViewController: UIViewController,AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
         
-        recordinginProgress.hidden = false
+        recordinginProgress.text = "Recording...."
         stopButton.hidden = false
         recordButton.enabled = false
     }
@@ -77,7 +75,6 @@ class RecordSoundsViewController: UIViewController,AVAudioRecorderDelegate {
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setActive(false, error: nil)
-        recordinginProgress.hidden = true
         stopButton.hidden = true
         recordButton.enabled = true
     }

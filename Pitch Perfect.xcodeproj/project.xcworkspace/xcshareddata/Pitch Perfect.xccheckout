@@ -10,31 +10,31 @@
 	<string>Pitch Perfect</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EDF2DB18A7E78025B74CCC4A99530513E650C999</key>
-		<string>https://github.com/zyp8884625/Udacity.git</string>
+		<key>26F95E880A26AA9C37BCD1B7742BB57C05A99FA9</key>
+		<string>https://github.com/zyp8884625/Pitch-Perfect.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Perfect Pitch/Pitch Perfect.xcodeproj</string>
+	<string>Pitch Perfect.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EDF2DB18A7E78025B74CCC4A99530513E650C999</key>
-		<string>../../..</string>
+		<key>26F95E880A26AA9C37BCD1B7742BB57C05A99FA9</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/zyp8884625/Udacity.git</string>
+	<string>https://github.com/zyp8884625/Pitch-Perfect.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EDF2DB18A7E78025B74CCC4A99530513E650C999</string>
+	<string>26F95E880A26AA9C37BCD1B7742BB57C05A99FA9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EDF2DB18A7E78025B74CCC4A99530513E650C999</string>
+			<string>26F95E880A26AA9C37BCD1B7742BB57C05A99FA9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Udacity</string>
+			<string>Pitch-Perfect</string>
 		</dict>
 	</array>
 </dict>

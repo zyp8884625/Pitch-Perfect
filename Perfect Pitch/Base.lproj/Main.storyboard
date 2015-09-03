@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Perfect_Pitch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V4-Is-lmc">
-                                <rect key="frame" x="267" y="358" width="67" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap To Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V4-Is-lmc">
+                                <rect key="frame" x="255" y="358" width="92" height="14"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -53,12 +53,24 @@
                             <constraint firstAttribute="centerX" secondItem="3V4-Is-lmc" secondAttribute="centerX" id="SxE-sE-cGc"/>
                             <constraint firstAttribute="centerY" secondItem="3V4-Is-lmc" secondAttribute="centerY" constant="-69" id="T2o-sR-IRP"/>
                             <constraint firstAttribute="centerY" secondItem="Jij-8m-ccy" secondAttribute="centerY" id="U8N-O5-yEb"/>
+                            <constraint firstAttribute="centerX" secondItem="3V4-Is-lmc" secondAttribute="centerX" id="UZx-xN-H9m"/>
                             <constraint firstAttribute="centerY" secondItem="Jij-8m-ccy" secondAttribute="centerY" id="ZUn-mk-LPK"/>
                             <constraint firstAttribute="centerX" secondItem="Jij-8m-ccy" secondAttribute="centerX" id="Zbu-Pq-RDp"/>
                             <constraint firstAttribute="centerY" secondItem="3V4-Is-lmc" secondAttribute="centerY" constant="-65" id="gTk-dJ-N8n"/>
                             <constraint firstAttribute="centerY" secondItem="3h4-Fn-nuW" secondAttribute="centerY" constant="-225" id="p3F-xe-hTk"/>
                             <constraint firstAttribute="centerX" secondItem="3V4-Is-lmc" secondAttribute="centerX" id="urN-f4-FSt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8gG-fM-ewn"/>
+                                <exclude reference="BNH-pA-nCW"/>
+                                <exclude reference="G2v-Dz-snN"/>
+                                <exclude reference="SxE-sE-cGc"/>
+                                <exclude reference="T2o-sR-IRP"/>
+                                <exclude reference="gTk-dJ-N8n"/>
+                                <exclude reference="urN-f4-FSt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Record" id="5ue-kZ-mOU"/>
                     <connections>
@@ -75,7 +87,7 @@
         <!--Play Sounds View Controller-->
         <scene sceneID="m66-Zr-fDr">
             <objects>
-                <viewController id="l84-po-mNj" customClass="PlaySoundsViewController" customModule="Perfect_Pitch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l84-po-mNj" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YS8-EV-cIw"/>
                         <viewControllerLayoutGuide type="bottom" id="5Hv-mL-m7u"/>
