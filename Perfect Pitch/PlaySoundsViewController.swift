@@ -42,7 +42,7 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playSlowAudio(sender: UIButton) {
-        playAudiowithDifferentRate(0.05)
+        playAudiowithDifferentRate(00.5)
 
     }
     @IBAction func playFastAudio(sender: UIButton) {
@@ -78,14 +78,5 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.startAndReturnError(nil)
         audioPlayerNode.play()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
