@@ -62,7 +62,7 @@ class RecordSoundsViewController: UIViewController,AVAudioRecorderDelegate {
             recordedAudio.filePathUrl = recorder.url
             recordedAudio.title = recorder.url.lastPathComponent
             
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }else{
             println("Recording was not successful")
             recordButton.enabled = true
