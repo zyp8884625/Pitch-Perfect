@@ -20,11 +20,9 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
         audioEngine = AVAudioEngine()
         audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
-
         // Do any additional setup after loading the view.
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate = true
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,18 +34,19 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.reset()
         audioPlayer.stop()
     }
-    
-    @IBAction func playSlowAudio(sender: UIButton) {
+    func playAudiowithDifferentRate(rate:Float){
         stopAllAudio()
-        audioPlayer.rate = 0.5
+        audioPlayer.rate = rate;
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
+    
+    @IBAction func playSlowAudio(sender: UIButton) {
+        playAudiowithDifferentRate(0.05)
+
+    }
     @IBAction func playFastAudio(sender: UIButton) {
-        stopAllAudio()
-        audioPlayer.rate = 2
-        audioPlayer.currentTime = 0.0
-        audioPlayer.play()
+        playAudiowithDifferentRate(2)
     }
 
     @IBAction func playChipmunkAudio(sender: UIButton) {
